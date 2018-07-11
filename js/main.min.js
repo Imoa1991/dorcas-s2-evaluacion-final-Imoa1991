@@ -3,6 +3,13 @@ var search = document.querySelector('.series');
 var buttonSearch = document.querySelector('.button');
 var ul = document.querySelector('ul');
 buttonSearch.addEventListener('click', see);
+search.addEventListener('keypress', enter);
+function enter(event) {
+  console.log(event);
+  if (event.key === 'Enter') {
+    see();
+  }
+}
 function see() {
   ul.innerHTML = '';
   fetch('http://api.tvmaze.com/search/shows?q=' + search.value)
