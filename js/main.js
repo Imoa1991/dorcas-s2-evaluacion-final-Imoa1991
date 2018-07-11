@@ -41,7 +41,7 @@ function see() {
 }
 function showTitle(event) {
   console.log(event);
-  event.currentTarget.classList.add('favourite');
+  event.currentTarget.classList.toggle('favourite');
 }
 // ul.innerHTML += '<li>' + '<img src=' + apiResponse[i].show.image.medium + '>' + apiResponse[i].show.name + '</li>';
 // }
