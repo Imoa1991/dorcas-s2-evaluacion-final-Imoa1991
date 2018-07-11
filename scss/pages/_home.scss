@@ -12,28 +12,44 @@ margin: 15px;
 padding-bottom: 10px;
 font-size: 25px;
 font-family: $title;
+color: $colorMain;
 }
 .series {
 border: none;
-border-bottom: 1px solid grey;
+border-bottom: 1px solid $borderLine;
 font-size: 15px;
 width: 200px;
 padding: 5px;
-margin-bottom: 20px;
 font-family: $series;
 &::placeholder{
-  color: black;
-  font-family: $series;
+  color: $colorMain;
+  font-family: $title;
   }
 }
 .container {
-background-color: pink;
+background-color: rgb(255, 192, 203);
 display: flex;
 flex-direction: column;
 margin: 0 auto;
 padding: 5px;
 }
 .favourite {
-border: 2px solid #6495ED;
-background-color: #E9967A;
+border: 2px solid $borderFavorite;
+background-color: $backgroundFavorite;
+}
+.list{
+list-style: none;
+}
+.container {
+margin: 10px;
+color: $colorSeries;
+font-family: $series;
+font-size: 15px;
+font-weight: bold;
+}
+.poster {
+max-width: 200px;
+margin: 0 auto;
+padding-bottom: 10px;
+
 }

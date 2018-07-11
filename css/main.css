@@ -14,36 +14,36 @@ body {
   padding-bottom: 10px;
   font-size: 25px;
   font-family: "Markazi Text", serif;
+  color: black;
 }
 
 .series {
   border: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightslategray;
   font-size: 15px;
   width: 200px;
   padding: 5px;
-  margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
 }
 
 .series::-webkit-input-placeholder {
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Markazi Text", serif;
 }
 
 .series:-ms-input-placeholder {
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Markazi Text", serif;
 }
 
 .series::-ms-input-placeholder {
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Markazi Text", serif;
 }
 
 .series::placeholder {
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Markazi Text", serif;
 }
 
 .container {
@@ -60,17 +60,47 @@ body {
 }
 
 .favourite {
-  border: 2px solid #6495ED;
-  background-color: #E9967A;
+  border: 2px solid salmon;
+  background-color: lightskyblue;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  margin: 10px;
+  color: indigo;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.poster {
+  max-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .button {
-  background-color: #F08080;
+  background-color: salmon;
   padding: 5px;
   border: none;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Markazi Text", serif;
+  margin-bottom: 20px;
+}
+
+.ul {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+
+.container {
+  grid-column: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
