@@ -1,55 +1,53 @@
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body{
-width: 100%;
-height: 100%;
-text-align: center;
-margin: 15px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 15px;
 }
 .title {
-padding-bottom: 10px;
-font-size: 25px;
-font-family: $title;
-color: $colorMain;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-family: $title;
+  color: $colorMain;
 }
 .series {
-border: none;
-border-bottom: 1px solid $borderLine;
-font-size: 15px;
-width: 200px;
-padding: 5px;
-font-family: $series;
-&::placeholder{
-  color: $colorMain;
-  font-family: $title;
+  border: none;
+  border-bottom: 1px solid $borderLine;
+  font-size: 15px;
+  width: 200px;
+  padding: 5px;
+  font-family: $series;
+  &::placeholder{
+    color: $colorMain;
+    font-family: $title;
   }
 }
 .container {
-background-color: rgb(255, 192, 203);
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-padding: 5px;
+  background-color: rgb(255, 192, 203);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 10px;
 }
 .favourite {
-border: 2px solid $borderFavorite;
-background-color: $backgroundFavorite;
+  border: 2px solid $borderFavorite;
+  background-color: $backgroundFavorite;
 }
 .list{
-list-style: none;
+  list-style: none;
 }
 .container {
-margin: 10px;
-color: $colorSeries;
-font-family: $series;
-font-size: 15px;
-font-weight: bold;
+  color: $colorSeries;
+  font-family: $series;
+  font-size: 15px;
+  font-weight: bold;
 }
 .poster {
-max-width: 200px;
-margin: 0 auto;
-padding-bottom: 10px;
-
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
