@@ -15,7 +15,7 @@ function see() {
         var lis = document.createElement('li');
         var image = document.createElement('img');
         var divs = document.createElement('div');
-        divs.classList.add =('container');
+        divs.classList.add('container');
         var contentName = document.createTextNode(name);
         if (apiResponse[i].show.image === null){
           ul.innerHTML += '<img src= "https://via.placeholder.com/210x295/FFE4C4/008B8B/?text=TV">';
@@ -26,9 +26,9 @@ function see() {
         divs.appendChild(image);
         divs.appendChild(contentName);
         ul.appendChild(lis);
-      }
-      divs.addEventListener('click', showTitle); //el div aun no esta creado
+        divs.addEventListener('click', showTitle); //el div aun no esta creado
       // ul.removeChild(lis); NO funciona :(
+      }
     });
 }
 function showTitle(event) {
