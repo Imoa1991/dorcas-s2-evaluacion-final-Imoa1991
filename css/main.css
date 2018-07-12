@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-  background-color: pink;
+  background-color: #ffdae0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@ body {
 }
 
 .favourite {
-  background-color: lightskyblue;
+  background-color: #d1e8ff;
   -webkit-box-shadow: 0 0 0 2px #a52828;
   box-shadow: 0 0 0 2px #a52828;
 }
