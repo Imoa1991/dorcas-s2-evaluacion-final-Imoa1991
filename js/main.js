@@ -12,7 +12,7 @@ function enter(event) {
 }
 function see() {
   ul.innerHTML = '';
-  fetch('http://api.tvmaze.com/search/shows?q=' + search.value)
+  fetch('https://api.tvmaze.com/search/shows?q=' + search.value)
     .then(function(response) {
       return response.json();
     })
