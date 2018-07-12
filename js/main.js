@@ -51,3 +51,4 @@ function showTitle(event) {
 function saveForm() {
   localStorage.setItem('userForm', JSON.stringify(userForm));
 }
+var savedTasks = JSON.parse(localStorage.getItem('userForm'));
