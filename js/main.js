@@ -2,9 +2,7 @@
 var search = document.querySelector('.series');
 var buttonSearch = document.querySelector('.button');
 var ul = document.querySelector('ul');
-var saveFavorites = [
-  'id':0,
-];
+var saveFavorites = [];
 buttonSearch.addEventListener('click', see);
 search.addEventListener('keypress', enter);
 function enter(event) {
@@ -45,10 +43,14 @@ function showTitle(event) {
   event.currentTarget.classList.toggle('favourite');
   var guiltyElement = event.currentTarget;
   var seriesID = guiltyElement.getAttribute('data-favorite');
-  saveFavorites[seriesID] = guiltyElement.value;
-  saveForm();
+  saveFavorites.push(seriesID);
+  for (var i=0; i<saveFavorites.lenght; i++){
+    if (saveFavorites[i] === seriesID ) {
+      saveForm();
+    }
+  }
 }
 function saveForm() {
-  localStorage.setItem('userForm', JSON.stringify(userForm));
+  localStorage.setItem('userForm', JSON.stringify(saveFavorites));
 }
-var savedTasks = JSON.parse(localStorage.getItem('userForm'));
+var savedTasks = JSON.parse(localStorage.getItem('saveFavorites'));
