@@ -2,9 +2,9 @@
 var search = document.querySelector('.series');
 var buttonSearch = document.querySelector('.button');
 var ul = document.querySelector('ul');
-var saveFavorites = [
-  'id':0,
-];
+// var saveFavorites = [
+//   'id':0,
+// ];
 buttonSearch.addEventListener('click', see);
 search.addEventListener('keypress', enter);
 function enter(event) {
