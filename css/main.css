@@ -12,38 +12,43 @@ body {
 
 .title {
   padding-bottom: 10px;
-  font-size: 25px;
+  font-size: 40px;
   font-family: "Markazi Text", serif;
   color: black;
 }
 
 .series {
   border: none;
-  border-bottom: 1px solid lightslategray;
-  font-size: 15px;
-  width: 200px;
-  padding: 5px;
+  border-bottom: 2px solid lightslategray;
+  color: black;
   font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  width: 300px;
+  padding: 5px;
 }
 
 .series::-webkit-input-placeholder {
   color: black;
   font-family: "Markazi Text", serif;
+  font-size: 15px;
 }
 
 .series:-ms-input-placeholder {
   color: black;
   font-family: "Markazi Text", serif;
+  font-size: 15px;
 }
 
 .series::-ms-input-placeholder {
   color: black;
   font-family: "Markazi Text", serif;
+  font-size: 15px;
 }
 
 .series::placeholder {
   color: black;
   font-family: "Markazi Text", serif;
+  font-size: 15px;
 }
 
 .container {
@@ -56,12 +61,13 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 auto;
-  padding: 10px;
+  padding: 15px 15px 30px;
 }
 
 .favourite {
-  border: 2px solid salmon;
   background-color: lightskyblue;
+  -webkit-box-shadow: 0 0 0 1px #a52828;
+  box-shadow: 0 0 0 1px #a52828;
 }
 
 .list {
@@ -69,33 +75,32 @@ body {
 }
 
 .container {
-  color: indigo;
+  color: #a52828;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
 
 .poster {
-  max-width: 250px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .button {
-  background-color: salmon;
-  padding: 5px;
+  background-color: #a52828;
+  padding: 4px 10px;
   border: none;
   color: white;
   font-size: 20px;
   font-family: "Markazi Text", serif;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,10 @@
 .button {
-background-color: $borderFavorite;
-padding: 5px;
+background-color: $colorSeries;
+padding: 4px 10px;
 border: none;
 color: $colorButton;
 font-size: 20px;
 font-family: $title;
 margin-bottom: 20px;
+font-weight: bold;
 }

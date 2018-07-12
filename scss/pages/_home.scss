@@ -10,32 +10,35 @@ body{
 }
 .title {
   padding-bottom: 10px;
-  font-size: 25px;
+  font-size: 40px;
   font-family: $title;
   color: $colorMain;
 }
 .series {
   border: none;
-  border-bottom: 1px solid $borderLine;
-  font-size: 15px;
-  width: 200px;
-  padding: 5px;
+  border-bottom: 2px solid $borderLine;
+  color: $colorMain;
   font-family: $series;
+  font-size: 15px;
+  width: 300px;
+  padding: 5px;
   &::placeholder{
     color: $colorMain;
     font-family: $title;
+    font-size: 15px;
   }
 }
 .container {
-  background-color: rgb(255, 192, 203);
+  background-color: $background;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 10px;
+  padding: 15px 15px 30px;
+
 }
 .favourite {
-  border: 2px solid $borderFavorite;
   background-color: $backgroundFavorite;
+  box-shadow: 0 0 0 1px $colorSeries;
 }
 .list{
   list-style: none;
@@ -47,7 +50,6 @@ body{
   font-weight: bold;
 }
 .poster {
-  max-width: 250px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
