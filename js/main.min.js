@@ -11,28 +11,38 @@ function enter(event) {
 }
 function see() {
   ul.innerHTML = '';
-  fetch('https://api.tvmaze.com/search/shows?q=' + search.value)
+  fetch('https://api.tvmaze.com/search/people?q=' + search.value)
     .then(function(response) {
       return response.json();
     })
     .then(function(apiResponse) {
       for(var i = 0; i<apiResponse.length; i++) {
-        var name = apiResponse[i].show.name;
+        var name = apiResponse[i].person.name;
+        var dateStart = apiResponse[i].person.birthday;
+        console.log(dateStart);
         var li = document.createElement('li');
         var div = document.createElement('div');
         var image = document.createElement('img');
+        var date = document.createElement('p');
         var contentName = document.createTextNode(name);
         li.classList.add('list');
         div.classList.add('container');
         image.classList.add('poster');
-        if (apiResponse[i].show.image === null){
+        date.classList.add('date');
+        if (apiResponse[i].person.image === null){
           image.src = 'https://via.placeholder.com/210x295/FFE4C4/008B8B/?text=TV';
         } else {
-          image.src = apiResponse[i].show.image.medium;
+          image.src = apiResponse[i].person.image.medium;
         }
+        if (dateStart === null) {
+          dateStart = 'No ha nacido';
+        }
+        var contentDate = document.createTextNode(dateStart);
+        date.appendChild(contentDate);
         div.addEventListener('click', showTitle);
         div.appendChild(image);
         div.appendChild(contentName);
+        div.appendChild(date);
         li.appendChild(div);
         ul.appendChild(li);
       }
